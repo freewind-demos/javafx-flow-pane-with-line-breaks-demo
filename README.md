@@ -1,5 +1,5 @@
-JavaFX Hello World Demo
-=======================
+JavaFX Layout FlowPane Demo
+===========================
 
-Show a window with `Hello, JavaFX` label.
+Layout -> `FlowPane`
 
