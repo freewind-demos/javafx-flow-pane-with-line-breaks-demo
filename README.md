@@ -1,5 +1,5 @@
-JavaFX Layout FlowPane Demo
-===========================
+JavaFX FlowPane with Line Breaks Demo
+=====================================
 
-Layout -> `FlowPane`
+`FlowPane` with line breaks
 

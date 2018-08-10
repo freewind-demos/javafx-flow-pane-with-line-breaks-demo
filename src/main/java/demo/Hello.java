@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 
 public class Hello extends Application {
@@ -15,11 +16,20 @@ public class Hello extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello");
         FlowPane root = new FlowPane() {{
-            for (int i = 0; i < 20; i++) {
+            for (int i = 0; i < 5; i++) {
                 getChildren().add(new Button("Hello" + i));
+                if (i == 2) {
+                    this.getChildren().add(lineBreak());
+                }
             }
         }};
-        primaryStage.setScene(new Scene(root, 200, 350));
+        primaryStage.setScene(new Scene(root, 400, 200));
         primaryStage.show();
+    }
+
+    private Region lineBreak() {
+        return new Region() {{
+            setPrefSize(Double.MAX_VALUE, 0.0);
+        }};
     }
 }
